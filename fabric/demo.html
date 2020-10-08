@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <canvas id="c" width="400" height="400"></canvas>
+    <script src="fabric.min.js"></script>
+    <script>
+        window.onload=function(){
+            
+            var canvas = new fabric.Canvas("c");
+            var rect = new fabric.Rect({
+                left: 100,
+                top: 100,
+                fill: 'red',
+                width: 400,
+                height: 400
+                });
+                canvas.add(rect);
+        }
+    </script>
+</body>
+</html>
