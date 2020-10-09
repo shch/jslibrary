@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <canvas id="c" width="400" height="400"></canvas>
+    <script src="fabric.min.js"></script>
+    <script>
+        window.onload=function(){
+            
+            var canvas = new fabric.Canvas("c");
+            /*
+            var text = new fabric.Text('hello world', { left: 100, top: 100 });
+            canvas.add(text);
+            */
+
+            /*
+            var comicSansText = new fabric.Text("I'm in Comic Sans", {
+                fontFamily: 'Comic Sans'
+            });
+            canvas.add(comicSansText);
+            */
+
+            /*
+            var text40 = new fabric.Text("I'm at fontSize 40", {
+                fontSize: 40
+            });
+            canvas.add(text40);
+            */
+
+            /*
+            var boldText = new fabric.Text("I'm at bold text", {
+                fontWeight: 'bold'
+            });
+            canvas.add(boldText);
+            */
+
+            /*
+            var underlineText = new fabric.Text("I'm an underlined text", {
+                underline: true
+            });
+            canvas.add(underlineText);
+            */ 
+
+            /*
+            var shadowText1 = new fabric.Text("I'm a text with shadow", {
+                shadow: 'rgba(0,0,0,0.3) 5px 5px 5px'
+            });
+            canvas.add(shadowText1);
+            */ 
+
+            /*
+            var italicText = new fabric.Text("A very fancy italic text", {
+                fontStyle: 'italic',
+                fontFamily: 'Delicious'
+            });
+            canvas.add(italicText);
+            */ 
+
+            /*
+            var textWithStroke = new fabric.Text("Text with a stroke", {
+                stroke: '#ff1318',
+                strokeWidth: 1
+                });
+            canvas.add(textWithStroke);
+            */ 
+
+            /*
+            var text = 'this is\na multiline\ntext\naligned right!';
+            var alignedRightText = new fabric.Text(text, {
+            textAlign: 'right'
+            });
+            canvas.add(alignedRightText);
+            */ 
+
+            /*
+            var lineHeight3 = new fabric.Text('Lorem ipsum Lorem\nLorem ipsum Lorem\n', {
+                lineHeight: 3
+            });
+            canvas.add(lineHeight3);
+            */
+
+            var text = 'this is\na multiline\ntext\nwith\ncustom lineheight\n&background';
+            var textWithBackground = new fabric.Text(text, {
+                textBackgroundColor: 'rgb(0,200,0)'
+            });
+            canvas.add(textWithBackground);
+            textWithBackground.on('selected', function() {
+                console.log('selected');
+            });
+
+
+
+
+
+            
+
+
+
+
+        };
+    </script>
+</body>
+</html>
