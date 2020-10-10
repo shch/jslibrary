@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <canvas id="c" width="1000" height="1000"></canvas>
+    <script src="fabric.min.js"></script>
+    <script>
+        window.onload=function(){
+            
+            var canvas = new fabric.Canvas("c");
+
+            /*
+            var circle = new fabric.Circle({
+            radius: 100,
+            fill: '#eef',
+            scaleY: 0.5,
+            originX: 'center',
+            originY: 'center'
+            });
+
+            var text = new fabric.Text('hello world', {
+            fontSize: 30,
+            originX: 'center',
+            originY: 'center'
+            });
+
+            var group = new fabric.Group([ circle, text ], {
+            left: 150,
+            top: 100,
+            angle: -10
+            });
+
+            canvas.add(group);
+
+            group.item(0).set('fill', 'red');
+                group.item(1).set({
+                text: 'trololo',
+                fill: 'white'
+            });
+            */ 
+
+            /*
+            var circle1 = new fabric.Circle({
+                radius: 50,
+                fill: 'red',
+                left: 0
+            });
+            var circle2 = new fabric.Circle({
+                radius: 50,
+                fill: 'green',
+                left: 100
+            });
+            var circle3 = new fabric.Circle({
+                radius: 50,
+                fill: 'blue',
+                left: 200
+            });
+
+            var group = new fabric.Group([ circle1, circle2, circle3 ], {
+                left: 200,
+                top: 100
+            });
+
+            canvas.add(group);
+            */
+
+
+          
+            JSON.stringify(canvas); // json
+
+            console.log(canvas.toSVG());//svg
+
+
+
+
+
+            
+
+
+
+
+        };
+    </script>
+</body>
+</html>
