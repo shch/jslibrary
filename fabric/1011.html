@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <canvas id="c" width="500" height="500"></canvas>
+    <img src="dog.png" id="dog">
+    <script src="fabric.min.js"></script>
+    <script>
+        window.onload=function(){
+            
+            var canvas = new fabric.Canvas("c");
+
+            /*
+            var imgElement = document.getElementById('dog');
+            var imgInstance = new fabric.Image(imgElement, {
+                left: 50,
+                top: 50,
+                angle: 10,
+                opacity: 0.85
+            });
+            canvas.add(imgInstance);
+            */
+            
+
+            /*
+            fabric.Image.fromURL('dog.png', function(oImg) {
+            // scale image down, and flip it, before adding it onto canvas
+            oImg.scale(0.5).set('flipX', true);
+            canvas.add(oImg);
+            });
+            */
+
+            /*
+            fabric.Image.fromURL('https://i.loli.net/2020/10/11/uI4qfivbyAKsOQ9.png', (img) => {
+                img.filters.push(new fabric.Image.filters.Grayscale());
+                img.applyFilters();
+                canvas.add(img);
+            }, {crossOrigin: 'anonymous'});
+            */
+
+            fabric.Image.fromURL('https://i.loli.net/2020/10/11/uI4qfivbyAKsOQ9.png', (img) => {
+                img.filters.push(new fabric.Image.filters.Sepia());
+                new fabric.Image.filters.Brightness({ brightness: 100 });
+                img.applyFilters();
+                canvas.add(img);
+            }, {crossOrigin: 'anonymous'});
+
+
+
+
+
+
+            
+
+
+
+
+        };
+    </script>
+</body>
+</html>
